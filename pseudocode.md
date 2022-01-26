@@ -1,4 +1,4 @@
-# saying hello
+# exercise: saying hello
 
 ## goal
 create program that prompts user for name, and greets user with name
@@ -31,6 +31,8 @@ failing case
 **error- no foreign characters allowed**
 
 ******
+# exercise: counting characters
+
 ## goal
 counting the number of characters. output string and string length
 
@@ -54,6 +56,8 @@ failing case
 **error- required**
 
 ******
+# exercise: printing quotes
+
 ## goal
 printing quotes. write a program that prompts for an author and quote. output the author and quote
 
@@ -87,8 +91,10 @@ failing case
 
 
 ******
+# exercise: madlibs
+
 ## goal
-madlib
+write a program that creates a madlib using a noun, verb, adjerb, and adjective. Include them in a string and make a story out of it
 
 ## inputs
 noun, verb, adverb, adjective
@@ -129,8 +135,10 @@ failing case
 **error- only enter letters!** 
 
 ******
+# exercise: simple math 
+
 ## goal
-simple math
+write a program that applies the four mathematical operations to 2 numbers.
 
 ## inputs
 number one, number two
@@ -176,8 +184,9 @@ failing case
 
 
 ******
+# exercise: retirement calculator
+
 ## goal
-retirement calculator
 create a program that calculates how many years you have left until retirement, and the retirement age
 
 ## inputs
@@ -198,7 +207,6 @@ years left to retire, current year, retirement year
 - **if user enters non-valid data**, output appropriate error
 
 - point *yearsLeftToRetire* to the result of subtracting *retirementYear* from *currentYear*
-
 
 ## tests
 passing case
