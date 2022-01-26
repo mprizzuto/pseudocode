@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-</head>
-<body>
-	<h1>pseudocode</h1>
-</body>
-</html>
+<?php
+require "functions.php";
+require "components/header.php"; 
+
+?>
+
+<main class="site-main">
+	<mark><?=formatInput($_GET)?></mark>
+
+</main>
+
+<?php require "components/footer.php"; ?>
