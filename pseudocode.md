@@ -187,8 +187,18 @@ current age, retirement age
 years left to retire, current year, retirement year
 
 ## pseudocode
-- typecast inputs to numbers
-- if user enters negative number, output *you can already retire* 
+- create date variable and point it to current date using server
+
+- create variables *yearsLeftToRetire*, *currentYear*, *retirementYear*, *currentAge*, *retirementAge*
+
+- typecast inputs, *currentAge* and *retirementAge* to numbers
+
+- **if user enters negative number,** output *you can already retire* 
+
+- **if user enters non-valid data**, output appropriate error
+
+- point *yearsLeftToRetire* to the result of subtracting *retirementYear* from *currentYear*
+
 
 ## tests
 passing case
@@ -200,6 +210,11 @@ failing case
 *What is your current age?* non-numerical data i.e s
 *At what age would you like to retire?* d
 **error- numbers only, try again**
+
+failing case
+*What is your current age?* negative or zero number i.e 0 or -2
+*At what age would you like to retire?*  -3
+**you can already retire!**
 
 *What is your current age?* empty space
 *At what age would you like to retire?* empty space
