@@ -1,12 +1,26 @@
 <?php
 require "functions.php";
-require "components/header.php"; 
 
+// dynamically generate meta based on query strings
+generateMeta($page);
+require "components/header.php"; 
+// formatInput($_GET);
 ?>
 
 <main class="site-main">
-	<mark><?=formatInput($_GET)?></mark>
+	
 
+	<?php 
+	//page router
+	switch($page) {
+		case "exercises":
+		include "pages/exercises.php";
+		break;
+
+		default:
+		include "pages/home.php";
+	}
+	?>
 </main>
 
 <?php require "components/footer.php"; ?>
