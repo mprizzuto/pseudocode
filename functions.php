@@ -26,8 +26,7 @@ function generateMeta($page) {
 			generateHead("homepage", "welcome to the homepage!");
 	}
 }
-
-
+// remove foreign characters, whitespace from input
 function sanitizeInput($input) {
 	$input = trim($input);
 	$input = stripslashes($input);
@@ -35,5 +34,13 @@ function sanitizeInput($input) {
 
 	return $input;
 }
+
+
+// return false if not a letter
+function onlyLetters(string $input):int {
+
+	return preg_match("/\d/", $input);
+}
 ?>
+
 
