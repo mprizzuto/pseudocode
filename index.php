@@ -4,17 +4,24 @@ require "functions.php";
 // dynamically generate meta based on query strings
 generateMeta($page);
 require "components/header.php"; 
-// formatInput($_GET);
+// formatInput($page);
+
+
+$exercise = $_GET["exercise"] ?? null;
+// formatInput($exercise);
 ?>
 
 <main class="site-main">
 	
-
 	<?php 
-	//page router
+	//main page router
 	switch($page) {
 		case "exercises":
 		include "pages/exercises.php";
+		break;
+
+		case "exercise-detail";
+		include "pages/exercise-detail.php";
 		break;
 
 		default:
