@@ -1,5 +1,13 @@
+<?php function generateHead($title, $description) {?>
+	<title><?=$title?></title>
+	<meta charset="utf-8">
+	<meta name="description" content="<?=$description?>">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+<?php }?>
+
 <?php
-$exercise = $_GET["exercise"] ?? null; //is this weird? using the same variable name twice? see generateMeta function
+$page = $_GET["page"] ?? null;
 
 function formatInput($input) {
 	echo "<pre>";
@@ -7,24 +15,16 @@ function formatInput($input) {
 	echo "</pre>";
 }
 
-// TODO- write 
-
-function generateMeta() {
-	$exercise = $_GET["exercise"] ?? null; 
-	switch ($exercise) {
-		case "saying-hello":
-		echo "saying hello meta";
+// generate the meta for pages
+function generateMeta($page) { 
+	switch ($page) {
+		case "exercises":
+			generateHead("exercises page", "exrcises for programmers");
 			break;
 		
 		default:
-			echo "default meta";
-			break;
+			generateHead("homepage", "welcome to the homepage!");
 	}
 }
 ?>
 
-<?php function generateHead() {?>
-	<meta name="description" content="">
-	<title>homepage</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-<?php }?>
