@@ -26,5 +26,14 @@ function generateMeta($page) {
 			generateHead("homepage", "welcome to the homepage!");
 	}
 }
+
+
+function sanitizeInput($input) {
+	$input = trim($input);
+	$input = stripslashes($input);
+	$input = htmlspecialchars($input);
+
+	return $input;
+}
 ?>
 
