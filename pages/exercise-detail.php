@@ -3,7 +3,6 @@
 
 		<exercise-detail>
 		<?php 
-
 			// projects router
 			switch($exercise) {
 				case "saying-hello";
@@ -14,6 +13,7 @@
 				include "pages/404.php";
 			}
 		?>
+
 	</exercise-detail>
 	</inner-column>
 </section>
