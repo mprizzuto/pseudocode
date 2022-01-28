@@ -1,0 +1,63 @@
+h1 {
+	font-size: clamp(2em, 5vw, 6vw);
+	font-family: "trebuchet ms", sans-serif;
+}
+
+h2 {
+	font-size: clamp(1.5em, 3vw, 4vw);
+}
+
+h1, h2 {
+	line-height:  1;
+	font-family: "trebuchet ms", sans-serif;
+}
+
+h1:first-letter, h2:first-letter {
+	text-transform: capitalize;
+}
+
+header {
+	/*padding-top: 10px;*/
+}
+
+nav a {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+a:first-letter {
+	text-transform:  capitalize;
+}
+
+.page-purpose {
+	display: inline-block;
+}
+
+.book-title {
+	font-style: italic;
+}
+
+.welcome a {
+	display: initial;
+}
+
+.home p {
+	max-width: 600px;
+	margin-top: 10px;
+}
+
+p {
+	margin-top: 5px;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+a[href="https://perpetual.education"] {
+}
+
+
+
+
+
