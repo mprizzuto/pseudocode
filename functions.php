@@ -38,8 +38,9 @@ function sanitizeInput($input) {
 
 // return false if not a letter
 function onlyLetters(string $input):int {
+	$letters = "/^[a-zA-Z]$/";
 
-	return preg_match("/\d/", $input);
+	return preg_match("/\d/", $input) || preg_match($letters, $input);
 }
 ?>
 
