@@ -12,7 +12,7 @@ require "data/exercise-data.php";
 				<exercise>
 					<h2 class="exercise-title"><?=$exercise["name"]?></h2>
 					<p><?=$exercise["goal"]?></p>
-					<p>technologies: <?=$exercise["technologies"]?></p>
+					<p>technologies: <?=$exercise["technologie(s)"]?></p>
 						<a href="<?=$exercise["link"]?>"><?=$exercise["name"]?></a>
 				</exercise>
 			<?php endforeach; ?>
