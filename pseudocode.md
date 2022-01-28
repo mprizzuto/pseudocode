@@ -30,6 +30,7 @@ failing case
 *whats your name?* non-sensical non-alaphabetic data i.e #$
 **error- no foreign characters allowed**
 
+
 ******
 # exercise: counting characters
 
@@ -54,6 +55,7 @@ passing case
 failing case
 *what is the word?* empty space 
 **error- required**
+
 
 ******
 # exercise: printing quotes
