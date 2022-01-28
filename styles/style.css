@@ -15,3 +15,11 @@ inner-column {
 	/*outline:  2px solid red;*/
 }
 
+body {
+	padding-bottom: 15vh;
+}
+
+.home-page-hidden {
+	display: none;
+}
+
