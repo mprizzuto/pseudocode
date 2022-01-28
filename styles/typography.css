@@ -57,6 +57,10 @@ strong {
 a[href="https://perpetual.education"] {
 }
 
+.cta a {
+	display: initial;
+}
+
 
 
 

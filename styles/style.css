@@ -2,6 +2,8 @@
 @import "exercises.css";
 @import "typography.css";
 @import "setup.css";
+@import "exercise-detail.css";
+
 
 inner-column {
 	display: block;
