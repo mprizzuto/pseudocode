@@ -61,6 +61,21 @@ a[href="https://perpetual.education"] {
 	display: initial;
 }
 
+p + form {
+	margin-top: 10px;
+}
+
+input[type=submit] {
+	display: block;
+	margin-top: 10px;
+	font-size: 1.4em;
+}
+
+label {
+	font-weight: bolder;
+	font-family: "trebuchet ms", sans-serif;
+}
+
 
 
 
