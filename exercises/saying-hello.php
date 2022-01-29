@@ -1,7 +1,6 @@
 <?php 
 $errorMessage = "";
-	if (in_array("", $_POST)) {
-		$errorMessage = "required";
+	if (in_array("", $_POST)) { 
 		$_POST["name"] = "undefined";
 	}
 ?>
@@ -11,7 +10,7 @@ $errorMessage = "";
 <form method="POST" action="?page=exercise-result&result=saying-hello">
 	<label for="name">name
 		<!-- /pages/exercise-result.php -->
-		<input type="text" name="name"><?=$errorMessage?>
+		<input type="text" name="name">
 	</label>
 
 	<input type="submit">

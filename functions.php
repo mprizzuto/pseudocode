@@ -36,7 +36,7 @@ function sanitizeInput($input) {
 }
 
 
-// return false if not a letter
+// return false contains a letter
 function onlyLetters(string $input):int {
 	// $letters = '/^[\w]+$/';
 	$letters = '/^[a-zA-Z ]+$/';
