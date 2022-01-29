@@ -14,10 +14,8 @@ require_once "./functions.php";
 		<?php 
 		if (in_array("", $_POST) || ctype_space($_POST["name"])) {
 			echo "<p>you entered NOTHING! try again, or remain unnamed</p>";
-		} elseif (onlyLetters($_POST["name"]) !== 0) {
-			echo "<p>no nums, letters only</p>";
-		}
-		elseif (onlyLetters($_POST["name"]) === 0) {
+		} 
+		elseif (onlyLetters($_POST["name"])) {
 			echo "<p>no foreign chars, letters only</p>";
 		}
 		else {
