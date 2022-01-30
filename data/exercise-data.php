@@ -10,19 +10,19 @@ $exerciseList = [
 		"name" => "counting characters",
 		"goal" => "create a program that counts the amount of characters in a string",
 		"technologie(s)" => "PHP",
-		"link" => "?page=exercise-detail&exercise=",
+		"link" => "?page=exercise-detail&exercise=counting-characters",
 	],
 	[
 		"name" => "printing quotes",
 		"goal" => "write a program that prompts for an author and quote. output the author and quote",
 		"technologie(s)" => "PHP ",
-		"link" => "?page=exercise-detail&exercise=",
+		"link" => "?page=exercise-detail&exercise=printing-quotes",
 	],
 	[
 		"name" => "madlibs",
 		"goal" => "write a program that creates a madlib using a noun, verb, adjerb, and adjective. Include them in a string and make a story out of it",
 		"technologie(s)" => "PHP",
-		"link" => "?page=exercise-detail&exercise=",
+		"link" => "?page=exercise-detail&exercise=madlibs",
 	],
 	[
 		"name" => "simple math",
