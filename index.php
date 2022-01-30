@@ -45,8 +45,7 @@ if (in_array("exercise-result", $_GET)) {
 				break;
 
 			default:
-		include "pages/404.php";
-				echo "wrong page, go home!";
+				include "pages/404.php";
 		}
 	}
 
