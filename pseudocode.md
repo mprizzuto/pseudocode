@@ -44,8 +44,9 @@ string
 string, string length
 
 ## pseudocode
-prompt for string, reference it with variable
-**use single outout statement to produce output**
+- prompt for string, reference it with variable
+- **use single outout statement to produce output**
+- output error if field is empty or whitespace only
 
 ## tests
 passing case
