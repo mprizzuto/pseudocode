@@ -9,6 +9,7 @@
 <?php
 $page = $_GET["page"] ?? null;
 
+// a more readable var_dump
 function formatInput($input) {
 	echo "<pre>";
 	var_dump($input);
@@ -26,6 +27,7 @@ function generateMeta($page) {
 			generateHead("homepage", "welcome to the homepage!");
 	}
 }
+
 // remove foreign characters, whitespace from input
 function sanitizeInput($input) {
 	$input = trim($input);
@@ -41,12 +43,35 @@ function onlyLetters(string $input):int {
 	// $letters = '/^[\w]+$/';
 	$letters = '/^[a-zA-Z ]+$/';
 
-	if (preg_match($letters, $input)) {
-	    return 0;
-	} else {
-	    return 1;
-	}
+	return preg_match($letters, $input);
 }
+
+// check for whitespace, returns truthy if found
+function checkWhiteSpace(mixed $input):int {
+	return ctype_space($input);
+}
+
+// count number of characters in string and return number
+function countCharacters(string $input):int {
+	return strlen($input);
+}
+
+
+function checkForeignChars(mixed $input):int {
+    // return truthy if any character below is found in the input string
+    $foreignChars = "/^[a-zA-Z]+$/";
+   
+    return preg_match($foreignChars, $input);
+}
+
+
+//return falsy if not number
+function onlyNums(string $input):int {
+  $pattern = "/^[0-9]+$/";
+  
+	return preg_match($pattern, $input);
+}
+
 
 
 ?>
