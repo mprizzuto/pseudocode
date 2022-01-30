@@ -2,3 +2,8 @@ exercise-detail {
 	display: block;
 	/*outline: 2px solid red;*/
 }
+
+exercise-detail p {
+	max-width: 60ch;
+	margin-top: 20px;
+}

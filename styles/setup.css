@@ -9,3 +9,7 @@ html {
 a {
 	display: block;
 }
+
+form label {
+	display: block;
+}
